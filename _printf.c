@@ -33,8 +33,8 @@ int _printf(const char *format, ...)
 		{
 			print_buffer(buffer, &buff_ind);
 			flags = get_flags(format, &i);
-			width = get_width(format, &i, list);
-			precision = get_precision(format, &i, list);
+			width = t_width(format, &i, list);
+			precision = t_precision(format, &i, list);
 			size = t_size(format, &i);
 			++i;
 			printed = hand_print(format, &i, list, buffer,
