@@ -21,8 +21,8 @@
 /**
  * struct fmt - Struct op
  *
- * @fmt: The format.
- * @fn: The function associated.
+ * @fmt: format
+ * @fn: function associated
  */
 struct fmt
 {
@@ -52,7 +52,7 @@ int print_str(va_list types, char buffer[],
 int print_percentage(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 
-/* Functions to print numbers */
+
 int print_int(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 int print_bin(va_list types, char buffer[],
@@ -69,11 +69,9 @@ int print_hexa_upper(va_list types, char buffer[],
 int print_hexa(va_list types, char map_to[],
 char buffer[], int flags, char flag_ch, int width, int precision, int size);
 
-/* Function to print non printable characters */
 int print_non_printable(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 
-/* Funcion to print memory address */
 int print_pointer(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 
